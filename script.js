@@ -23,7 +23,7 @@ let userAge = 18
 //km scelti da utente
 let userKm
 
-//prezzo equivalente di un km
+//prezzo equivalente di prezzo al km
 const priceKm = 0.21
 
 //discount di base
@@ -57,5 +57,6 @@ else {
     discount = 0;
 }
 
+//OUTPUT 
 finalPrice = totalPrice * (1 - discount / 100);
 console.log (finalPrice.toFixed(2))
