@@ -18,36 +18,35 @@ per controllare che la vostra logica sui prezzi funzioni correttamente, provate 
 
 //INPUT
 //stabilisci età
-let age = 18 
+let userAge = 18 
+
+//numero km 
+let km = 1
 
 //prezzo equivalente di un km
 let priceKm = 0.21
+
+//discount di base
+let discount = 0
 
 //ELABORAZIONE
 //chiedo user il numero di km che vuole percorrere
 const userKm = parseInt(prompt("Inserisci i km che desideri percorrere"))
 
 //chiedo user la sua età
-const userAge = parseInt(prompt("Inserisci la tua età"))
+userAge = parseInt(prompt("Inserisci la tua età"))
 console.log(userKm, userAge)
 
 //calcolo prezzo totale per adulti
-let totalPriceAdult = (priceKm * userKm) 
-console.log(totalPriceAdult)
+let totalPrice = (priceKm * userKm) 
+console.log(totalPrice)
 
+//calcolo prezzo per minorenni e senior
+if (userAge < 18) {
+discount = 20;
+}
 
+else if (userAge > 65) {
+discount = 40;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-//calcolo del prezzo per over 65
-
-//output
